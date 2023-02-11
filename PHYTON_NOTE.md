@@ -7,14 +7,16 @@ help(object)
 you can also use the dir(object) command to find out all the methods of a particular option, and you can use object.__doc__ to find out its document string.
 
 Python does not have a mandatory character to terminate statements. Any blocks are specified using indentation, so you indent to start a block and de-dent to the end one. Statements expecting an indentation level end with a colon. If you want to add comments, use the # sign for each line. Multi-line strings need to be used for multi-line comments. Values are assigned using the “=” sign, and equality testing is done with two of them “==”. You can decrement or increment values with the operators += or -= with the amount on the right-hand side. This can work on strings and other data types. You can also use multiple variables on one line, like so:
-Data types
+
+#Data types.
 
 Let’s move ahead to data types. The data structures in Python are dictionaries, tuples and lists. Sets can be found in the sets library that is available in all versions of Python from 2.5 onwards. Lists are similar to one-dimensional arrays, although you can also have lists of other lists. Dictionaries are essentially associative arrays or hash tables. Tuples are one-dimensional arrays. Now, Python arrays can be of any type, and the types are always zero. Negative numbers start from the end to the beginning, and -1 is the last item. Variables can also point to functions. Here is an example of the usage:
 
 You can use the colon to access array ranges. If you leave the start index empty, the interpreter assumes the first item, so the end index assumes the last item. Negative indexes count from the last item, so -1 is seen as the last item. Here is an example:
 
 Adding the third parameter will see the Python step in the N item increments instead of one in the last line. For instance, in the above sample code, the first item is returned and then the third, so items zero and two in zero-indexing.
-Strings
+
+#Strings.
 
 Let’s move on to strings. Python strings can either use single or double quotation marks, and you can use quotation marks of one kind in a string using another kind, so the following is valid:
 
@@ -36,7 +38,8 @@ String: ---
 strString = """This is a multiline string."""
 >>> print "This %(verb)s a %(noun)s." % {"noun": "test", "verb": "is"}
 This is a test.
-Flow control statements
+
+#Flow control statements.
 
 Python’s flow control statements are ‘while’, ‘for’ and ‘if’. For a switch, you need to use ‘if’. For enumerating through list members, use ‘for’. For obtaining a number list, use range (number). Here is the statement syntax:
 
@@ -57,7 +60,8 @@ else:
 print "Dunno"
 while rangelist[1] == 1:
 pass
-Functions
+
+#Functions.
 
 The ‘def’ keyword is used to declare functions. Optional arguments can be set in the function declaration after mandatory arguments by assigning them default values. In the case of named arguments, the argument name is assigned a value. Functions can return a tuple, and you can effectively return several values using tuple unpacking. Parameters are passed through reference, but tuples, ints, strings, and other immutable types are unchangeable because only the item’s memory location is passed. Binding another object to the variable removed the older one and replaced immutable types. Here is an example:
 
@@ -75,7 +79,8 @@ print passing_example(my_list, my_int)
 my_list
 [1, 2, 3, 'A new item'] my_int
 10
-Classes
+
+#Classes.
 
 Python supports a very limited multiple class inheritance. Private methods and variables can be declared with the addition of two or more underscores and at most one trailing one. You can also bind names to class instances, like so.
 
@@ -118,7 +123,8 @@ hello
 >>> classinstance.test = 10
 >>> classinstance.test
 10
-Exceptions
+
+#Exceptions.
 
 In Python, Exceptions are handled via try-except blocks [exceptionname]. Here is an example syntax:
 
@@ -143,7 +149,8 @@ from time import clock
 randomint = random.randint(1, 100)
 >>> print randomint
 64
-File I/O
+
+#File I/O.
 
 The Python programing language comes with a lot of libraries, to begin with. For instance, here is a look at how we convert data structures to strings with the use of the pickle library using file I/O:
 
@@ -166,7 +173,8 @@ loadedlist = pickle.load(myfile)
 myfile.close()
 >>> print loadedlist
 ['This', 'is', 4, 13327]
-Conditions and variables
+
+#Conditions and variables.
 
 Conditions in Python can be changed. For instance, take a look at this condition:
 
